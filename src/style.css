@@ -1,0 +1,57 @@
+@font-face {
+	src: url('./font/default.ttf');
+	font-family: 'Raleway';
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+* {
+	transition: all 120ms ease;
+}
+.flex {
+	display: flex;
+}
+.center {
+	justify-content: center;
+	align-items: center;
+}
+.hidden {
+	visibility: hidden;
+}
+
+.base {
+	background-color: #114357;
+	background: linear-gradient(45deg, #114357, #F29492);
+	flex-direction: column;
+	width: 100vw; height: 100vh;
+}
+.sqr {
+	width: 16vw; height: 16vw;
+	border: solid #ffffff 1px;
+	font-size: 5em;
+	color: #ffffff;
+}
+
+.sqr:hover {
+	background-color: #232526;
+	background: linear-gradient(45deg, #2325261e, #4143451e);
+	cursor: pointer;
+}
+[data-y-index="0"][data-x-index="0"],
+[data-y-index="0"][data-x-index="2"],
+[data-y-index="2"][data-x-index="0"],
+[data-y-index="2"][data-x-index="2"] {
+	border: none;
+}
+[data-y-index="0"][data-x-index="1"],
+[data-y-index="2"][data-x-index="1"] {
+	border-top: none;
+	border-bottom: none;
+}
+[data-y-index="1"][data-x-index="0"],
+[data-y-index="1"][data-x-index="2"] {
+	border-left: none;
+	border-right: none;
+}
