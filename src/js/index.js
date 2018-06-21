@@ -109,7 +109,6 @@ Game.prototype.endgame = function () {
 		new Game({ score, count });
 		let uiOptions = Array.from(document.querySelectorAll('.sqr')).slice(4, 6),
 			showScore = setInterval(() => {
-				console.log(4);
 				for (let [i, elem] of uiOptions.entries())
 					elem.innerText = elem.innerText === '' ? this.data.player.score[i] : '';
 			}, 333);
