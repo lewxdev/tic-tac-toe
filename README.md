@@ -1,8 +1,8 @@
-# 3xr - 3-in-a-row #
+# tic-tac-toe #
 A web-based rendition of tic-tac-toe
 
 ## About ##
-3xr, a rendition of tic-tac-toe, is designed to implement a simple, contemporary UI and cyclical gameplay (keeping score) for a better playing experience. Under the hood, functionality is implemented through a single ```Game``` object that renders the game and computes the logic after each turn, appended via prototype methods (e.g. `Game.prototype.drawBoard()`, `Game.prototype.checkWinnerStatus()`, `Game.prototype.endgame()`, etc.).
+tic-tac-toe, is designed to implement a simple, contemporary UI and cyclical gameplay (keeping score) for a better playing experience. Under the hood, functionality is implemented through a single ```Game``` object that renders the game and computes the logic after each turn, appended via prototype methods (e.g. `Game.prototype.drawBoard()`, `Game.prototype.checkWinnerStatus()`, `Game.prototype.endgame()`, etc.).
 
 The basic user interface is built on the basic and iconic tic-tac-toe board, where, for the sake of minimalistic design and simplicity, the only information displays (score) and options (player count) are accessible via the middle right-most two cells of the board, still functional as usual spaces during gameplay.
 
